@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Se agrega un media query ya que en la vesrion movil se descuadra, por lo tanto, en version movil el archivo se va a ver normal, de forma vertical, y en navegador se verá de forma horizontal*/
+@media (min-width:768px){
+    .dos-columnas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); /*Repeat(cantidad de veces que se va a repetir,fraccion, medida, porcentaje o lo que se requiera)*/
+        /*Puedes colocarlo con rem, o fracciones; "1fr 1fr", o en porcentajes: "50% 50%"*/
+        column-gap: 2rem;
+    }
+}
+
+/*NOTA: 768px es la resolucion promedio de los dispositivos moviles*/
+
+/*Grid solo afeta al primer nivel de hijos*/
