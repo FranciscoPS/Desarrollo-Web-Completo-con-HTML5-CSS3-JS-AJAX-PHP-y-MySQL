@@ -1,0 +1,52 @@
+/*Gracias a esto, si tienes un elemento y le defines un ancho, al agregar padding no le va a afectar*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; /*Se debe agregar para usar las fuentes de google fonts*/
+    font-size: 1.6rem; /*Todo el texto será de 1.6 por defecto*/
+    line-height: 2; /*Todo el texto tendra un interlineado de 2 por defecto*/
+}
+
+/**Globales**/
+/*Todos los contenedores tendrán esta caracteristica*/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/** Utilidades **/
+
+.centrar-texto{
+    text-align: center;
+}
