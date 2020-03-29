@@ -18,6 +18,7 @@ body{
 /*Todos los contenedores tendrán esta caracteristica*/
 .contenedor{
     max-width: 1200px;
+    width: 95%; /*Asi toma solamente el 95% de ancho y no se pone todo hasta la esquina*/
     margin: 0 auto;
 }
 
@@ -121,3 +122,33 @@ img{
 .texto-header p{
     font-size: 2.2rem;
 }
+
+/**Contenido Principal HOME**/
+.contenido-principal{
+    display: flex;
+    flex-wrap: wrap; /*Esta propiedad activada hace que los elementos se apilen en una misma linea*/
+}
+
+.blog,
+.cursos{
+    /*Ponemos las propiedades así para que se vea bien cada entrada en el dispositivo movil*/
+    flex: 0 0 100%; 
+    /*flex-grow: 0; Factor de crecimiento 0||flex-shrink: 0; Factor de encogimiento 0||flex-basis: 100%; Que tome el 100 de su espacio dispinible, todo esto se resume en un solo flex*/
+}
+
+.cursos{
+    order: -1; /*Asi muestra primero la sección de cursos*/
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        justify-content: space-between;
+    }
+    .blog{
+        flex-basis: 66%;
+        order: -1;
+    }
+    .cursos{
+        flex-basis: calc(33.3% - 4rem);
+    }
+]
