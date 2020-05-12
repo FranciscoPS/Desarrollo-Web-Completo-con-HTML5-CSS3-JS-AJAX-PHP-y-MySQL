@@ -316,7 +316,7 @@ img{
 
 .testimonial blockquote::before{ /*Agregamos un pseudo-elemento antes del blockquote*/
     content: '';
-    background-image: url(../img/comilla.svg); /*Al ser un pseudo-elemento debemos dar los valores*/
+    background-image: url(/img/comilla.svg); /*Al ser un pseudo-elemento debemos dar los valores*/
     width: 4rem;
     height: 4rem;
     position: absolute; /*Este elemento debe ser elemento padre, para que el texto, lo movamos en base a este elemento*/
