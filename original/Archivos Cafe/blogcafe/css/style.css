@@ -57,6 +57,17 @@ img{
     margin: 0; /*Le quita el margin por defecto*/
 }
 
+/** Grid **/
+@media(min-width: 768px){
+    .grid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .columnas-6{
+        flex:0 0 calc(50% - 1rem);
+    }
+}
+
 /**Botones**/
 .btn{
     display: block; /*Toma todo el espacio disponible*/
