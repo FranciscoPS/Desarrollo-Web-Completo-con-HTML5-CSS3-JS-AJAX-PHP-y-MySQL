@@ -420,10 +420,12 @@ img{
 
 /***NOSOTROS .HTML***/
 
-.contenido-nosotros{
-    display: grid; /*Es una alternativa a display flex*/
-    grid-template-columns: 50% 50%; /*Distribuye los elementos, 50% de espacio para la imagen y 50% de espacio para el texto*/
-    grid-column-gap: 2rem; /*Con GRID puedes usar esta caracteristica para que solo dando la cantidad, te de la separacion entre cada columna*/
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid; /*Es una alternativa a display flex*/
+        grid-template-columns: 50% 50%; /*Distribuye los elementos, 50% de espacio para la imagen y 50% de espacio para el texto*/
+        grid-column-gap: 2rem; /*Con GRID puedes usar esta caracteristica para que solo dando la cantidad, te de la separacion entre cada columna*/
+    }
 }
 
 .texto-nosotros blockquote{
