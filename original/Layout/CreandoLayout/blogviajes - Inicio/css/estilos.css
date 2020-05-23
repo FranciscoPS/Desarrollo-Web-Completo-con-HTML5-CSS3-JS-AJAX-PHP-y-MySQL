@@ -31,7 +31,7 @@ img{
 
 @media (min-width: 768px) {
     .navegacion-principal a{
-        display: inline-block; /*Inline block permite padding*/
+        display: inline-block; /*Inline block permite padding, inline no*/
     }
 }
 
