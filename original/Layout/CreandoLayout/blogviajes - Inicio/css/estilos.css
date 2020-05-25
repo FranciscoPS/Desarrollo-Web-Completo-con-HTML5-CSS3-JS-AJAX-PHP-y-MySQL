@@ -149,3 +149,45 @@ h2{
 .sidebar ul li:hover a{
     color: #ffffff;
 }
+
+.footer-sitio{
+    background-color: #DB008D;
+    padding-top: 40px;
+    margin-top: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-sitio h2{
+    color: #ffffff;
+}
+
+.footer-sitio a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-sitio a:last-of-type{
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-sitio .nosotros{
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footer-sitio .menu{
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+
+.copyright{
+    background-color: #D10474;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
+}
