@@ -28,7 +28,7 @@ p{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out; /*Una transición de 3 segundos al hacer hover*/
 }
 
 .boton:hover{
@@ -43,6 +43,24 @@ p{
 
 .site-header{
     padding: 20px 0 20px 0; /*Padding top, right, bot, left.....SIGUE EL SENTIDO HORARIO*/
+}
+
+/**Navegación Responsive**/
+
+.barra{
+    overflow: hidden; /*Como la altura en 0 de la navegacion principal, desaparece los elementos*/
+}
+
+.mobile-menu{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+
+.navegacion-principal{
+    max-height: 0; /*Para desaparecer la navegacion principal*/
 }
 
 /** Navegacion **/
