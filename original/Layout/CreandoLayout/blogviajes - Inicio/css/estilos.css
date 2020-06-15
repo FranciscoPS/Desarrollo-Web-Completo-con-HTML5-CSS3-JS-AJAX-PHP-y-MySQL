@@ -38,7 +38,6 @@ p{
 .contenedor{
     max-width: 1200px;
     margin: 0 auto; /*El margin en el eje y es 0 y en x es automático*/
-
 }
 
 .site-header{
