@@ -38,11 +38,17 @@ p{
 .contenedor{
     max-width: 1200px;
     margin: 0 auto; /*El margin en el eje y es 0 y en x es automático*/
-    overflow: auto; /*Para que los flotantes , no hagan que el contenido se coloque por debajo*/
+
 }
 
 .site-header{
     padding: 20px 0 20px 0; /*Padding top, right, bot, left.....SIGUE EL SENTIDO HORARIO*/
+}
+
+.clearfix::after {
+    content:'';
+    clear: both;
+    display: block;
 }
 
 /**Navegación Responsive**/
@@ -59,8 +65,23 @@ p{
     padding: 20px 0;
 }
 
+#nav:target{
+    max-height: 800px; /*Al dar click, se expande el menú (Cuando en el navegador aparezca #nav)*/
+}
+
 .navegacion-principal{
     max-height: 0; /*Para desaparecer la navegacion principal*/
+    transition: .5s;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        max-height: unset; /*Al estar en un disp. más grande ignora el max-height: 0;*/
+    }
+    .cerrar,
+    .mobile-menu{
+        display: none!important;
+    }
 }
 
 /** Navegacion **/
