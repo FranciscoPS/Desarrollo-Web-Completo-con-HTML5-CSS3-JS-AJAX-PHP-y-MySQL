@@ -1,0 +1,52 @@
+:root{
+    --fuentePrincipal: 'Staatliches', cursive;
+
+    --primario: #9c27b0;
+    --primarioOscuro: #89119d;
+    --secundario: #ffce00;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--primario);
+    line-height: 2;
+    font-size: 2rem;
+}
+
+.header{
+    display: grid;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.barra{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+}
+
+.barra .nav{    
+    display: grid;
+    grid-template-columns: repeat(2,200px);/*Crea dos columnas de dos pixeles, detecta los elementos y los acomoda automaticamente en las dos columnas*/
+    grid-column-gap: 1rem; /*Da separación entre columnas*/
+    justify-content: center;
+}
+
+.barra .nav a{
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.barra .nav a:hover{
+    color: var(--secundario);
+}
