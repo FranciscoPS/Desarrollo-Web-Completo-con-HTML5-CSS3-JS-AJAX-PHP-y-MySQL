@@ -17,10 +17,13 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/6e5ca10468.js" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
@@ -38,11 +41,13 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
         </nav>
         <div class="informacion-evento">
-          <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 Dic</p>
-          <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Guadalajara, MX</p>
-        </div><!--Información Evento-->
-        <h1 class="nombre-sitio">GdlWebCamp</h1>
-        <p class="slogan">la mejor conferencia de <span>Diseño Web</span></p>
+          <div class="clearfix"> <!--Clearfix va para que al usar floats, el contenido siguiente se posicione correctamente-->
+            <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 Dic</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Guadalajara, MX</p>
+          </div>
+          <h1 class="nombre-sitio">GdlWebCamp</h1>
+          <p class="slogan">La mejor conferencia de <span>Diseño Web</span></p>
+        </div><!--Información Evento-->        
       </div>
     </div><!--Hero-->
 
